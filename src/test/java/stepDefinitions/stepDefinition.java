@@ -1,19 +1,18 @@
 package stepDefinitions;
 
+import org.junit.runner.RunWith;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.junit.Cucumber;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.PendingException;
-import io.cucumber.java.en.And;
-import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class) /* RunWith is optional from latest versions */
 public class stepDefinition {
 
     @Given("^User is on on landing page$")
     public void i_am_on_landing_page() throws Throwable {
-        throw  new PendingException();
+        System.out.println("User is on the landing page");
     }
 
     @When("^User login into application with username and password$")
