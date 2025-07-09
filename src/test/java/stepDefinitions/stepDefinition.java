@@ -12,6 +12,24 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class) /* RunWith is optional from latest versions */
 public class stepDefinition {
 
+    @Given("validate the browser")
+    public void validate_the_browser() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("Browser is validated");
+    }
+
+    @When("browser is triggered")
+    public void browser_is_triggered() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("Browser is triggered");
+    }
+
+    @Then("check browser is started")
+    public void check_browser_is_started() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("Browser is started");
+    }
+
     @Given("^User is on on landing page$")
     public void i_am_on_landing_page() throws Throwable {
         System.out.println("User is on the landing page");
