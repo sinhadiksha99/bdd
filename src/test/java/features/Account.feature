@@ -40,3 +40,7 @@ Feature: Portal Login
       | user1    | pass1    |
       | user2    | pass2    |
       | user3    | pass3    |
+
+# suppose we dont have background and also in hooks we have not given the tags , but tags are present with each scenario
+# like here we have @PortalTest tag with each scenario and if we run the test hooks will be executed before and after each scenario
+# then all before and after methods will be executed for each scenario (but tag should not be present in hooks)
