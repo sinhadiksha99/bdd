@@ -1,6 +1,6 @@
 Feature: Application Login
 
-  @RegTest
+  @RegTest @SmokeTest
   Scenario: Home page default login
     Given User is on on landing page
     When User login into application with username "hello" and password "world"
@@ -28,8 +28,8 @@ Feature: Application Login
 # parameterization is a way to run the same test with different data sets.
 # if we want to run the same test with different data sets then we can use the scenario outline
 # and examples in cucumber which is very useful for parameterization.
-
-  @RegTest
+# every entry in the examples table will be run as a separate scenario or seperate test case.
+  @SanityTest
   Scenario Outline: Home page default signup with data table
     Given User is on on landing page
     When User login in to application with <username> and password <password>
